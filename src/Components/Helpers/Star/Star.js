@@ -1,4 +1,4 @@
-import {React,useState} from 'react';
+import React from 'react';
 import './Star.css'
 const Star = ({ marked, starId }) => {
     return (
@@ -9,8 +9,8 @@ const Star = ({ marked, starId }) => {
   };
   
   const StarRating = ({ value }) => {
-    const [rating, setRating] = useState(parseInt(value) || 0);
-    const [selection, setSelection] = useState(0);
+    const rating = parseInt(value) || 0;
+    const selection = 0
   
 
     return (

@@ -99,7 +99,7 @@ export default class App extends Component {
       <div>
         <div style={{backgroundColor:'rgba(0 , 0 , 0,0.8)'}}>
           <div style={{display:'flex',flexDirection:'row-reverse'}}>
-            <img onClick={this.handleClick} src={Cross} style={{width:'40px',height:'40px',marginTop:'5vh',marginRight:'3vh'}}/>
+            <img alt="img" onClick={this.handleClick} src={Cross} style={{width:'40px',height:'40px',marginTop:'5vh',marginRight:'3vh'}}/>
           </div>
           <Slider {...settings} >
               {this.state.arr}

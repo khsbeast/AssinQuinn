@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Box.css'
 import StarRating from '../Helpers/Star/Star';
 import Tag from '../Helpers/Tag/Tag';
@@ -43,7 +43,7 @@ const Box = ({ mon, caldate, day, date, map, oncl, year }) => {
             <span className='Month'>{mon}</span>
           </div> : <div className='text'>{date}</div>}
           <StarRating value={ob.rating} />
-          <img src={ob.media[0].mediaurl} style={{ width: '100%', height: 'auto', maxHeight: '50%', objectFit: 'contain' }} />
+          <img alt="img" src={ob.media[0].mediaurl} style={{ width: '100%', height: 'auto', maxHeight: '50%', objectFit: 'contain' }} />
           <Tag a={a} b={b} c={c} d={d} e={e} />
         </div>
       </div>

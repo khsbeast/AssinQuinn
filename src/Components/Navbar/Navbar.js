@@ -1,6 +1,4 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card'
-import Navbar from 'react-bootstrap/Navbar'
 import 'bootstrap/dist/css/bootstrap.css';
 import './Navbar.css'
 

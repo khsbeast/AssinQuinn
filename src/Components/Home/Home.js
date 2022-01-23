@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import InfiniteScroll from 'react-bidirectional-infinite-scroll';
 import moment from 'moment'
 import './Home.css'
@@ -19,7 +19,7 @@ function Home() {
   const [response, setresponse] = useState(null)
   const [open, setopen] = useState(false);
   const [calendar, setcalendar] = useState([]);
-  const [value, setvalue] = useState(moment());
+  const  value = moment()
   const [data, setdata] = useState(null)
 
   const call = async () => {
