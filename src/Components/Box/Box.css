@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.rat{
+    height: 1px;
+    width: 2px;
+}
+.Box{
+    background-color: white;
+    height: 10rem;
+    border-right:  solid #E8E8E8;
+    border-bottom:  solid #E8E8E8;
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-width: thin;
+    align-items: center;
+    flex-direction: column;
+}
+.Box2{
+    margin: 0px;
+    padding: 0px;
+    background-color: #F8F8F8;
+    height: 10rem;
+    border-right:  solid #E8E8E8;
+    border-bottom:  solid #E8E8E8;
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-width: thin;
+    align-items: center;
+    flex-direction: column;
+}
+.text {
+    margin: 0px;
+    padding: 2.99px;
+    color: #000;
+}
+.Month{
+    color: cadetblue;
+    margin-left: 5px;
+}

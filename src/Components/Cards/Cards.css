@@ -1,0 +1,16 @@
+img{
+    max-height: 40vh;
+    object-fit: cover;
+}
+.title{
+    margin-top: '20px'!important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+.text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+}
+.hh{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+  .calendar .day {
+    position: relative;
+    width: calc(100% / 7);
+    display: inline-block;
+  }
+
