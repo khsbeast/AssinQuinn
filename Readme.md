@@ -44,7 +44,7 @@ Integrating Pro icons is very easy and user friendly.
 ![figma library](./src//assets/figma.png)
 
 2. Import the Icon you want to use using the named export.
-Note : We follow Pascal case naming for icons so if an icon is named ```attachment-out-01 ``` It will be available as ```AttachmentOut01```
+Note : We follow Pascal case naming for icons so if an icon is named ```attachment-out-01 ``` It will be available as ```AttachmentOutOne```
 
 ![Import ](./src//assets/import.png)
 
