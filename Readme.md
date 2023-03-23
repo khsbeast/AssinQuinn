@@ -50,6 +50,9 @@ Note : We follow Pascal case naming for icons so if an icon is named ```attachme
 
 3. And you are done style the icons as you want. Happy coding :)
 
+---
+
+
 **Some utility commands for file manipulation while creating and publishing build**
 
 ```
