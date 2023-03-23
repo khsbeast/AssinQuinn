@@ -20,18 +20,6 @@ Procol Icon Pack
    ```
 
 ---
-## Getting Started with Pro-Icons
-Integrating Pro icons is very easy and user friendly.
-
-1. Search the name of the Icon you want to use from this [figma library](https://www.figma.com/file/Ub8jpmLNQZ3pxTrej2du74/Fundamentals?node-id=94-247&t=wCfBIRHyNczM21YO-0).
-
-![figma library](./src//assets/figma.png)
-
-2. Import the Icon you want to use using the named export(Note : We follow Pascal case naming for icons so if an icon is named ```attachment-out-01 ``` It will be available as ```AttachmentOut01```)
-
-![Import ](./src//assets/import.png)
-
-3. And you are done style the icons as you want. Happy coding :)
 
 ## How to update and publish new icons
 
@@ -48,6 +36,19 @@ In that case, interrupt the process after the `.esm` build is created. And run `
 Run `npm publish` after that
 
 ---
+## Getting Started with Pro-Icons
+Integrating Pro icons is very easy and user friendly.
+
+1. Search the name of the Icon you want to use from this [figma library](https://www.figma.com/file/Ub8jpmLNQZ3pxTrej2du74/Fundamentals?node-id=94-247&t=wCfBIRHyNczM21YO-0).
+
+![figma library](./src//assets/figma.png)
+
+2. Import the Icon you want to use using the named export.
+Note : We follow Pascal case naming for icons so if an icon is named ```attachment-out-01 ``` It will be available as ```AttachmentOut01```
+
+![Import ](./src//assets/import.png)
+
+3. And you are done style the icons as you want. Happy coding :)
 
 **Some utility commands for file manipulation while creating and publishing build**
 
