@@ -1,33 +1,59 @@
-###                                        Quinn Frontend Internhip Assingment
+### Pro Icons
+
+Procol Icon Pack
+
+## How to install pro-icons in your project
+
+1. Create a `.npmrc` file in the root of your project and add credentials
+
+```bash
+# .npmrc
+@procol-tech:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=TOKEN
+```
+
+2. Create a [personal access token](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) for your github account with read access to repository and packages
+3. Paste your token in your `.npmrc` file.
+4. Done! Now you can install the pro-icon package
+   ```bash
+   npm install @procol-tech/pro-icons
+   ```
+
+---
+## Getting Started with Pro-Icons
+Integrating Pro icons is very easy and user friendly.
+
+1. Search the name of the Icon you want to use from this [figma library](https://www.figma.com/file/Ub8jpmLNQZ3pxTrej2du74/Fundamentals?node-id=94-247&t=wCfBIRHyNczM21YO-0).
 
 
 
-### Tech Stack used
 
-React Js
-CSS
-Bootstrap(Button and Card skeleton temeplates)
+## How to update and publish new icons
 
-### Component Structure
+1. Setup your auth via `.npmrc` as mentioned above
+2. Update source files as needed in `src/svg-icons`
+3. Run `npm run build` and wait for bundles to be created
+4. Run `npm publish`
 
- Api -> Responsible for request object and returns the data after api is called.
+### Troubleshoot
 
- Box -> Responsible for 1 calendar Box View recives object data as prop from Home Component
+Sometimes the build process hangs after creating thr `.esm` build.
+In that case, interrupt the process after the `.esm` build is created. And run `npm run postbuild` command to cleanup the build files.
 
- Cards -> Responsible for a Single Card Component recieves object data as prop from Home Component
+Run `npm publish` after that
 
-## Helpers -> Contains all the helping Components
+---
 
-Modal -> Responsible to activate as we click the box component Handle the Slicker component
+**Some utility commands for file manipulation while creating and publishing build**
 
-Slick -> Responsible for generating the slider component recives data and index from Modal
+```
+# Rename File
+# This line search for files containing `outlined` and then replaces the text `outlined` with `outline`
+find . -name "*outlined*" -type f -print0 | xargs -0 -I {} sh -c 'mv "{}" "$(dirname "{}")/`echo $(basename "{}") | sed 's/outlined/outline/g'`"'
+```
 
-Spinner -> UI before data fetched
-
-Star -> Rating Component
-
-Tag -> generates coditional tags depend on object tags array
-
-Home -> The main ui components handle all states fetches data to send as props to children and generates diffrent fallback UIs
-
-Test -> Just for testing working of components
+```
+# Delete Files
+# this line find all the files with which contain `mobileout` in filename and deletes them recursively
+find ./ -name "*mobileout*" -exec rm -rf {} \;
+```
