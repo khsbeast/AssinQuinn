@@ -24,6 +24,7 @@ Procol Icon Pack
 Integrating Pro icons is very easy and user friendly.
 
 1. Search the name of the Icon you want to use from this [figma library](https://www.figma.com/file/Ub8jpmLNQZ3pxTrej2du74/Fundamentals?node-id=94-247&t=wCfBIRHyNczM21YO-0).
+![figma library](./src//assets/figma.png)
 
 
 
